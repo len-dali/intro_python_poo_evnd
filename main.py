@@ -1,24 +1,19 @@
-def main():
-    print('Hello, World!')
-    print("Hola de nuevo, Mundo!")
-
-resultado = suma()
-    print(f"La suma de los dos numeros es: {resultado}")
 def suma():
-    num1= int(input("Ingrese el primer numero: "))
-        num2= int(input("Ingrese el segundo numero: "))
+    num1 = float(input("Ingrese el primer numero para sumar: "))
+    num2 = float(input("Ingrese el segundo numero para sumar: "))
+    return num1 + num2
 
-resultado = resta()
-        print(f"La resta de los dos numeros es: {resultado}")
- def resta():
-    num1 = int (input("Ingrese el primer numero: "))
-    num2 = int (input("Ingrese el segundo numero: "))
+def resta():
+    num1 = float(input("Ingrese el primer numero para restar: "))
+    num2 = float(input("Ingrese el segundo numero para restar: "))
+    return num1 - num2
 
-        return num1 - num2
+print("Hello Worl!")
+print("Hola de nuevo, Mundo!")
 
-if __name__ == "__main__":
-    main()
+resultado_suma = suma()
+print(f"El resultado de la suma de los dos numeros es: {resultado_suma}")
 
-
-    
+resultado_suma = resta()
+print(f"El resultado de la resta de los dos numeros es: {resultado_resta}")
 
